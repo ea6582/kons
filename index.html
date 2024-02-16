@@ -65,8 +65,8 @@
     <p id="PS4fw"></p> <!-- PS4 firmware bilgisini göstermek için bir yer tutucu -->
     
     <div class="button-container">
-      <a class="favorite styled ps3" href="/PS3">PS3 HEN</a>
-      <a class="favorite styled" href="/PS4">PS4 9.00</a>
+      <a class="favorite styled ps3" href="/kons/PS3">PS3 HEN</a>
+      <a class="favorite styled" href="/kons/PS4">PS4 9.00</a>
     </div>
 
     <script>
@@ -92,7 +92,7 @@
             if (UA === "9.00") {
                 document.getElementById('PS4fw').innerHTML = "v" + UA + " Detected"; // PS4 firmware sürümü 9.00 ise belirli bir işlem yap
                 setTimeout(function() {
-                    window.location.href = '/PS4'; // PS4 firmware sürümü 9.00 ise PS4 sayfasına yönlendir
+                    window.location.href = '/kons/PS4'; // PS4 firmware sürümü 9.00 ise PS4 sayfasına yönlendir
                 }, 10000); // 10 saniye sonra yönlendirme yap
             } else {
                 document.getElementById('PS4fw').innerHTML = "Spoofed To v" + UA; // PS4 firmware sürümü 9.00 değilse belirli bir işlem yap
