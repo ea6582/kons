@@ -70,7 +70,7 @@
     </div>
 
     <script>
-        var redirectTime = 10; // Yönlendirme zamanı (saniye)
+        var redirectTime = 5; // Yönlendirme zamanı (saniye)
         var userAgent = navigator.userAgent;
 
         var countdownElement = document.getElementById("countdown");
@@ -85,7 +85,7 @@
 
         if (userAgent.indexOf('PlayStation 3') !== -1) {
             setTimeout(function() {
-                window.location.href = '/PS3/index.html'; // PS3 cihazlara doğrudan yönlendirme yap
+                window.location.href = '/kons/PS3/index.html'; // PS3 cihazlara doğrudan yönlendirme yap
             }, 10000); // 10 saniye sonra yönlendirme yap
         } else if (userAgent.indexOf('PlayStation 4') !== -1) {
             var UA = userAgent.substring(userAgent.indexOf('5.0 (') + 19, userAgent.indexOf(') Apple')).replace("layStation 4/","");
