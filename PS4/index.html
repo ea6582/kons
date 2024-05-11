@@ -10,6 +10,13 @@ color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;}
 </style>
 
 <style>
+   .dis {
+    width: 5%;
+    height: 5%;
+    text-align: end;
+    font-size: 50px
+  } 
+
 .btnkme {
     width: 100%;
     height: 100%;
@@ -208,13 +215,22 @@ function load_binserver9020(){
 }
 
 
-
 function load_goldhenbeta(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>GoldHEN v2.4b14 YÜKLENİYOR   LÜTFEN BEKLEYİN!!!</h1>";
-LoadedMSG="GoldHEN v2.4b14 YÜKLENDİ";
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>GoldHEN v2.4b17 YÜKLENİYOR   LÜTFEN BEKLEYİN!!!</h1>";
+LoadedMSG="GoldHEN v2.4b17 YÜKLENDİ";
 PLfile = "pl_goldhenbeta.bin";
 loadPayloadData();
 }
+
+
+function load_disableupdates(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Disable-Updates. Please wait!.</h1>";
+LoadedMSG="Disable-Updates Loaded";
+PLfile = "pl_disableupdates.bin";
+
+loadPayloadData();
+}
+
 
 </script>
 </head>
